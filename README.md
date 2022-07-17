@@ -1,11 +1,11 @@
 # CustomHotkeys
-Daily use custom hotkeys
+Daily use custom hotkeys; [NEEDS UPDATE]
 
 # SETUP
 1. Download latest [AutoHotKey v1](https://www.autohotkey.com/)
 
-2. Place Script.ahk file here (Windows 10)
-`C:\Users\tehdr\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
+2. Place Script.ahk file here (Windows 11)
+`C:\Users\<user>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
 
 3. Run the file once.
 
@@ -13,7 +13,7 @@ Daily use custom hotkeys
 ```
 Application states if hotkey works globaly or just in a specific app.
 Active hotkeys will activate listeners, once script starts.
-Disabled hotkeys are previously used, but now commented out. ¯\_(ツ)_/¯
+Some of the scripts not added to the compiled file. ¯\_(ツ)_/¯
 
 To find Emoji Codes use http://www.mauvecloud.net/charsets/CharCodeFinder.html
 ```
@@ -111,6 +111,21 @@ To find Emoji Codes use http://www.mauvecloud.net/charsets/CharCodeFinder.html
   
 ---
 
+### Creates new empty text file (Windows 11)
+  
+  **HotKey:** CTRL+SHIFT+F
+  
+  **Limitations:** Windows 11, needs open explorer window
+
+  <details>
+  <summary>Code</summary>
+  
+  ```
+  SENDS {AppsKey}, w, t
+```
+  </details>
+  
+---
  </details>
 
 <details>
@@ -136,7 +151,7 @@ To find Emoji Codes use http://www.mauvecloud.net/charsets/CharCodeFinder.html
   
   **HotKey:** CTRL+S
   
-  **Limitations:** Prevents CTRL+S
+  **Limitations:** Prevents CTRL+S (when not in Dev Tools)
 
   <details>
   <summary>Code</summary>
@@ -361,7 +376,7 @@ To find Emoji Codes use http://www.mauvecloud.net/charsets/CharCodeFinder.html
   </details>
 
 ---
-  ### Quick deleting, using mouse.
+### Quick deleting, using mouse.
   
   **HotKey:** MOUSE BACK (M4)
   
